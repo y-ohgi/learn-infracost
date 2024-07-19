@@ -20,8 +20,8 @@ resource "aws_instance" "web" {
   instance_type = var.type
 
   tags_all = {
-    Name = "HelloWorld-${each}"
-    Service = each
-    Environment = each
+    Name = "HelloWorld-${each.value}"
+    Service = each.value
+    Environment = each.value
   }
 }
