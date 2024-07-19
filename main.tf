@@ -10,7 +10,7 @@ variable "az" {
 
 variable "type" {
   type = string
-  default = "t3.micro"
+  default = "t3.large"
 }
 
 resource "aws_instance" "web" {
